@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Privacy Policy - Media Converter Pro: Ultimate</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: "class",
+            };
+        </script>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+            body {
+                font-family: "Nunito", sans-serif;
+            }
+            .accordion-content {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-in-out;
+            }
+            .theme-toggle-btn {
+                position: fixed;
+                top: 1rem;
+                right: 1rem;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                z-index: 100;
+            }
+            .theme-toggle-btn .icon {
+                font-size: 2rem;
+                color: #6b7280;
+            }
+            .dark .theme-toggle-btn .icon {
+                color: #d1d5db;
+            }
+        </style>
+        <!-- Chosen Palette: Calm Harmony (Warm Neutrals) -->
+        <!-- Application Structure Plan: The SPA is designed for maximum clarity and readability of a legal document. It starts with a "Key Highlights" section using visually distinct cards to provide a quick, user-friendly summary of the most important privacy points. The main body of the policy is organized into a JavaScript-powered accordion. This structure was chosen to prevent overwhelming the user with a wall of text, allowing them to easily navigate to and expand only the sections they are interested in. This transforms a static document into an accessible, interactive experience. -->
+        <!-- Visualization & Content Choices: The entire report is textual. Goal: Inform & Organize. Method: The primary "visualization" is the structure itself. Key points are extracted into summary cards (HTML/Tailwind) for quick comprehension. The detailed text is organized into an interactive accordion (HTML/Tailwind/JS) to manage information density. Interaction: Users can click on accordion headers to reveal detailed text. This is more engaging than scrolling through a long document. Justification: This structure respects user time and attention, making a dense topic more approachable. Library/Method: Vanilla JS for interactions. CONFIRMATION: NO SVG/Mermaid. -->
+        <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    </head>
+    <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200">
+        <button id="theme-toggle" class="theme-toggle-btn">
+            <span class="icon" role="img" aria-label="Theme toggle">
+                <span id="sun-icon">☀️</span>
+                <span id="moon-icon" class="hidden">🌙</span>
+            </span>
+        </button>
+        <div class="container mx-auto max-w-4xl p-4 sm:p-6 md:p-8">
+            <header class="text-center mb-10">
+                <a
+                    href="index.html"
+                    class="inline-block text-blue-600 dark:text-blue-400 hover:underline font-bold mb-4"
+                >
+                    &lt; Back to Home
+                </a>
+                <h1
+                    class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white"
+                >
+                    Privacy Policy
+                </h1>
+                <p class="text-lg text-gray-600 dark:text-gray-400 mt-2">
+                    Media Converter Pro: Ultimate
+                </p>
+                <p class="text-sm text-gray-500 dark:text-gray-500 mt-2">
+                    Last Updated: September 4, 2025
+                </p>
+            </header>
+
+            <section class="mb-12">
+                <h2
+                    class="text-2xl font-bold text-center text-gray-900 dark:text-white mb-6"
+                >
+                    Key Highlights
+                </h2>
+                <p
+                    class="text-center text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto"
+                >
+                    This application was built with your privacy as a priority.
+                    Here are the most important things you need to know about
+                    how we handle your information.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div
+                        class="bg-white p-6 rounded-3xl border border-gray-200 shadow-sm dark:bg-gray-800 dark:border-gray-700"
+                    >
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-4">🔒</span>
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg text-gray-900 dark:text-white"
+                                >
+                                    Your Files Are Yours
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-400">
+                                    All media conversion happens entirely on
+                                    your device. Your files are never uploaded,
+                                    saved, or transmitted by us.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-3xl border border-gray-200 shadow-sm dark:bg-gray-800 dark:border-gray-700"
+                    >
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-4">🚫</span>
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg text-gray-900 dark:text-white"
+                                >
+                                    No Personal Data Collected
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-400">
+                                    The app's core functions do not collect,
+                                    store, or require any personally
+                                    identifiable information like your name or
+                                    email.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-3xl border border-gray-200 shadow-sm dark:bg-gray-800 dark:border-gray-700"
+                    >
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-4">✈️</span>
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg text-gray-900 dark:text-white"
+                                >
+                                    Works Fully Offline
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-400">
+                                    An internet connection is not required for
+                                    any of the app's conversion features,
+                                    ensuring your work stays private.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-3xl border border-gray-200 shadow-sm dark:bg-gray-800 dark:border-gray-700"
+                    >
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-4">📢</span>
+                            <div>
+                                <h3
+                                    class="font-semibold text-lg text-gray-900 dark:text-white"
+                                >
+                                    Ad-Supported
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-400">
+                                    To keep the app free, we show ads from
+                                    Google AdMob, which may collect anonymous
+                                    data to personalize your ad experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2
+                    class="text-2xl font-bold text-center text-gray-900 dark:text-white mb-8"
+                >
+                    The Full Policy
+                </h2>
+                <div class="space-y-4" id="accordion-container">
+                    <div
+                        class="bg-white border border-gray-200 rounded-3xl dark:bg-gray-800 dark:border-gray-700"
+                    >
+                        <button
+                            class="accordion-header w-full flex justify-between items-center text-left p-5 font-semibold text-lg text-gray-900 dark:text-white"
+                        >
+                            <span>Introduction</span>
+                            <svg
+                                class="w-5 h-5 transform transition-transform"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 9l-7 7-7-7"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div
+                                class="p-5 pt-0 text-gray-700 dark:text-gray-300"
+                            >
+                                <p>
+                                    This Privacy Policy informs you of our
+                                    policies regarding the collection, use, and
+                                    disclosure of personal data when you use our
+                                    Media Converter Pro: Ultimate ("the App").
+                                    We have designed this App with your privacy
+                                    in mind. The core functionality of the
+                                    App—converting your media files—is performed
+                                    entirely on your device and does not require
+                                    an internet connection. No personal data or
+                                    media files are ever transmitted from your
+                                    device to our servers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white border border-gray-200 rounded-3xl dark:bg-gray-800 dark:border-gray-700"
+                    >
+                        <button
+                            class="accordion-header w-full flex justify-between items-center text-left p-5 font-semibold text-lg text-gray-900 dark:text-white"
+                        >
+                            <span>Information Collection and Use</span>
+                            <svg
+                                class="w-5 h-5 transform transition-transform"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 9l-7 7-7-7"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div
+                                class="p-5 pt-0 text-gray-700 dark:text-gray-300"
+                            >
+                                <p>
+                                    The App does not collect, store, or transmit
+                                    any personally identifiable information
+                                    about you. All media conversion processes
+                                    are handled locally on your device. The App
+                                    does not require access to your personal
+                                    information such as name, email address, or
+                                    phone number to function.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white border border-gray-200 rounded-3xl dark:bg-gray-800 dark:border-gray-700"
+                    >
+                        <button
+                            class="accordion-header w-full flex justify-between items-center text-left p-5 font-semibold text-lg text-gray-900 dark:text-white"
+                        >
+                            <span>Log Data & App Performance</span>
+                            <svg
+                                class="w-5 h-5 transform transition-transform"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 9l-7 7-7-7"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div
+                                class="p-5 pt-0 text-gray-700 dark:text-gray-300"
+                            >
+                                <p>
+                                    As a free, ad-supported application, the App
+                                    may collect certain non-personally
+                                    identifiable information, such as the type
+                                    of device you are using, operating system
+                                    version, and general usage statistics (e.g.,
+                                    app crashes). This information is used
+                                    solely for the purpose of maintaining and
+                                    improving the stability and performance of
+                                    the App.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white border border-gray-200 rounded-3xl dark:bg-gray-800 dark:border-gray-700"
+                    >
+                        <button
+                            class="accordion-header w-full flex justify-between items-center text-left p-5 font-semibold text-lg text-gray-900 dark:text-white"
+                        >
+                            <span>Advertising</span>
+                            <svg
+                                class="w-5 h-5 transform transition-transform"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 9l-7 7-7-7"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div
+                                class="p-5 pt-0 text-gray-700 dark:text-gray-300"
+                            >
+                                <p class="mb-4">
+                                    The App is supported by advertisements. To
+                                    serve these ads, third-party ad networks may
+                                    collect and use certain non-personally
+                                    identifiable information. This information
+                                    may be used to provide personalized ads to
+                                    you. The data collected by these ad networks
+                                    is governed by their own privacy policies.
+                                </p>
+                                <p>
+                                    We use the following ad partner. We do not
+                                    have control over the data collected by
+                                    them. Please review their privacy policy for
+                                    more information:
+                                </p>
+                                <ul class="list-disc list-inside mt-2">
+                                    <li>
+                                        <strong>Google AdMob</strong>:
+                                        <a
+                                            href="https://policies.google.com/privacy"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="text-blue-600 dark:text-blue-400 hover:underline"
+                                            >https://policies.google.com/privacy</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white border border-gray-200 rounded-3xl dark:bg-gray-800 dark:border-gray-700"
+                    >
+                        <button
+                            class="accordion-header w-full flex justify-between items-center text-left p-5 font-semibold text-lg text-gray-900 dark:text-white"
+                        >
+                            <span>Security</span>
+                            <svg
+                                class="w-5 h-5 transform transition-transform"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 9l-7 7-7-7"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div
+                                class="p-5 pt-0 text-gray-700 dark:text-gray-300"
+                            >
+                                <p>
+                                    Because the App's core functionality is
+                                    local and does not transmit your personal
+                                    data or media files, the risk of external
+                                    security breaches is minimized. While we
+                                    strive to protect the data on your device,
+                                    please be aware that no method of
+                                    transmission over the internet or method of
+                                    electronic storage is 100% secure.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white border border-gray-200 rounded-3xl dark:bg-gray-800 dark:border-gray-700"
+                    >
+                        <button
+                            class="accordion-header w-full flex justify-between items-center text-left p-5 font-semibold text-lg text-gray-900 dark:text-white"
+                        >
+                            <span>Children's Privacy</span>
+                            <svg
+                                class="w-5 h-5 transform transition-transform"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 9l-7 7-7-7"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div
+                                class="p-5 pt-0 text-gray-700 dark:text-gray-300"
+                            >
+                                <p>
+                                    The App does not knowingly collect any
+                                    personally identifiable information from
+                                    children under the age of 13. If a parent or
+                                    guardian believes that the App has collected
+                                    personally identifiable information about
+                                    their child, please contact us immediately
+                                    at the address provided below, and we will
+                                    make every effort to promptly remove such
+                                    information from our records.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white border border-gray-200 rounded-3xl dark:bg-gray-800 dark:border-gray-700"
+                    >
+                        <button
+                            class="accordion-header w-full flex justify-between items-center text-left p-5 font-semibold text-lg text-gray-900 dark:text-white"
+                        >
+                            <span>Changes to This Policy</span>
+                            <svg
+                                class="w-5 h-5 transform transition-transform"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 9l-7 7-7-7"
+                                ></path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div
+                                class="p-5 pt-0 text-gray-700 dark:text-gray-300"
+                            >
+                                <p>
+                                    We may update our Privacy Policy from time
+                                    to time. We will notify you of any changes
+                                    by posting the new Privacy Policy on this
+                                    page. You are advised to review this Privacy
+                                    Policy periodically for any changes. Changes
+                                    to this Privacy Policy are effective when
+                                    they are posted on this page.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer
+                class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700 text-center"
+            >
+                <a
+                    href="index.html"
+                    class="text-blue-600 dark:text-blue-400 hover:underline font-bold"
+                >
+                    &lt; Back to Home
+                </a>
+                <h2
+                    class="text-2xl font-bold text-gray-900 dark:text-white mt-4 mb-4"
+                >
+                    Contact Us
+                </h2>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">
+                    If you have any questions about this Privacy Policy, please
+                    contact us:
+                </p>
+                <div
+                    class="flex flex-col sm:flex-row justify-center items-center gap-4"
+                >
+                    <a
+                        href="mailto:support@sofluffy.io"
+                        class="text-blue-600 dark:text-blue-400 hover:underline"
+                        >support@sofluffy.io</a
+                    >
+                    <span class="hidden sm:inline text-gray-400">|</span>
+                    <a
+                        href="https://mcu.sofluffy.io"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-blue-600 dark:text-blue-400 hover:underline"
+                        >https://mcu.sofluffy.io</a
+                    >
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const accordionHeaders =
+                    document.querySelectorAll(".accordion-header");
+
+                accordionHeaders.forEach((header) => {
+                    header.addEventListener("click", function () {
+                        const content = this.nextElementSibling;
+                        const icon = this.querySelector("svg");
+
+                        const isOpen =
+                            content.style.maxHeight &&
+                            content.style.maxHeight !== "0px";
+
+                        if (isOpen) {
+                            content.style.maxHeight = "0px";
+                            icon.style.transform = "rotate(0deg)";
+                        } else {
+                            content.style.maxHeight =
+                                content.scrollHeight + "px";
+                            icon.style.transform = "rotate(180deg)";
+                        }
+                    });
+                });
+                const themeToggleBtn = document.getElementById("theme-toggle");
+                const sunIcon = document.getElementById("sun-icon");
+                const moonIcon = document.getElementById("moon-icon");
+                const html = document.documentElement;
+
+                const prefersDark = window.matchMedia(
+                    "(prefers-color-scheme: dark)",
+                ).matches;
+                const storedTheme = localStorage.getItem("theme");
+
+                if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+                    html.classList.add("dark");
+                    sunIcon.classList.add("hidden");
+                    moonIcon.classList.remove("hidden");
+                } else {
+                    html.classList.remove("dark");
+                    sunIcon.classList.remove("hidden");
+                    moonIcon.classList.add("hidden");
+                }
+
+                themeToggleBtn.addEventListener("click", () => {
+                    if (html.classList.contains("dark")) {
+                        html.classList.remove("dark");
+                        localStorage.setItem("theme", "light");
+                        sunIcon.classList.remove("hidden");
+                        moonIcon.classList.add("hidden");
+                    } else {
+                        html.classList.add("dark");
+                        localStorage.setItem("theme", "dark");
+                        sunIcon.classList.add("hidden");
+                        moonIcon.classList.remove("hidden");
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

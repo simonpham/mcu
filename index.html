@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Media Converter Pro: Ultimate</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: "class",
+            };
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                font-family: "Nunito", sans-serif;
+            }
+            /* Style for the theme toggle button */
+            .theme-toggle-btn {
+                position: fixed;
+                top: 1rem;
+                right: 1rem;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                z-index: 100;
+            }
+            .theme-toggle-btn .icon {
+                font-size: 2rem;
+                color: #6b7280; /* Gray-500 */
+            }
+            .dark .theme-toggle-btn .icon {
+                color: #d1d5db; /* Gray-300 */
+            }
+        </style>
+        <!-- Chosen Palette: Calm Harmony (Warm Neutrals) -->
+        <!-- Application Structure Plan: The SPA is structured as a product landing page with distinct, scrollable sections. The main user flow is from a central, impactful hero section to feature highlights, then to clear calls-to-action for app downloads. This structure was chosen to guide the user from initial interest to taking action (downloading the app) while providing key information and reaffirming the app's core values (privacy, speed) without requiring a deep dive into an entire website. A theme toggle has been added for enhanced user comfort. -->
+        <!-- Visualization & Content Choices: The content is a mix of headings, descriptive text, and images. Goal: Persuade & Inform. Method: The page's structure and layout are the primary "visualization." Unicode icons and placeholder images for a logo and app screenshots have been added to make the page more visually appealing and informative. Interaction: Simple, direct links to download the app and view the privacy policy, and a new theme toggle button. Justification: This design is effective for a landing page, providing necessary information in a digestible format. Library/Method: HTML/Tailwind for structure and styling, with vanilla JS for the interactive theme toggle. CONFIRMATION: NO SVG/Mermaid. -->
+        <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    </head>
+    <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200">
+        <button id="theme-toggle" class="theme-toggle-btn">
+            <span class="icon" role="img" aria-label="Theme toggle">
+                <span id="sun-icon">☀️</span>
+                <span id="moon-icon" class="hidden">🌙</span>
+            </span>
+        </button>
+
+        <div class="flex flex-col items-center min-h-screen">
+            <div class="container mx-auto max-w-4xl p-4 sm:p-6 md:p-8">
+                <!-- Hero Section -->
+                <section
+                    class="flex flex-col items-center justify-center text-center py-16"
+                >
+                    <img
+                        src="assets/logo.png"
+                        alt="Media Converter Pro: Ultimate App Logo"
+                        class="w-24 h-24 sm:w-32 sm:h-32 mb-6 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700"
+                    />
+                    <h1
+                        class="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 leading-tight"
+                    >
+                        Media Converter Pro:
+                        <span
+                            class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-600 font-extrabold"
+                            >Ultimate</span
+                        >
+                    </h1>
+                    <p
+                        class="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl"
+                    >
+                        Your ultimate solution for all media conversion needs,
+                        right on your device. Fast, private, and fully offline.
+                    </p>
+                    <div
+                        class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+                    >
+                        <a
+                            href="#"
+                            class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-blue-700 transition-colors"
+                        >
+                            Download for Android
+                        </a>
+                        <span
+                            class="inline-block bg-gray-200 text-gray-400 font-bold py-3 px-6 rounded-full shadow-md cursor-not-allowed dark:bg-gray-700 dark:text-gray-300"
+                        >
+                            Coming Soon for iOS
+                        </span>
+                    </div>
+                </section>
+
+                <!-- Features Section -->
+                <section
+                    class="py-12 border-t border-gray-200 dark:border-gray-700"
+                >
+                    <h2
+                        class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8"
+                    >
+                        Features That Matter
+                    </h2>
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
+                    >
+                        <div
+                            class="bg-white p-6 rounded-3xl shadow-sm border border-gray-200 dark:bg-gray-800 dark:border-gray-700"
+                        >
+                            <span class="text-4xl mb-4 block">🚀</span>
+                            <h3 class="text-xl font-bold mb-2">Blazing Fast</h3>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Conversions happen instantly on your device,
+                                leveraging its full power without delays.
+                            </p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-3xl shadow-sm border border-gray-200 dark:bg-gray-800 dark:border-gray-700"
+                        >
+                            <span class="text-4xl mb-4 block">🔒</span>
+                            <h3 class="text-xl font-bold mb-2">
+                                Absolute Privacy
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Your files never leave your device. All
+                                processing is 100% offline, guaranteed.
+                            </p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-3xl shadow-sm border border-gray-200 dark:bg-gray-800 dark:border-gray-700"
+                        >
+                            <span class="text-4xl mb-4 block">📴</span>
+                            <h3 class="text-xl font-bold mb-2">
+                                Fully Offline
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                No internet connection? No problem. Use the app
+                                anytime, anywhere.
+                            </p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-3xl shadow-sm border border-gray-200 dark:bg-gray-800 dark:border-gray-700"
+                        >
+                            <span class="text-4xl mb-4 block">✅</span>
+                            <h3 class="text-xl font-bold mb-2">
+                                Simple Interface
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                A clean and intuitive design makes converting
+                                your media a breeze for everyone.
+                            </p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-3xl shadow-sm border border-gray-200 dark:bg-gray-800 dark:border-gray-700"
+                        >
+                            <span class="text-4xl mb-4 block">🎬</span>
+                            <h3 class="text-xl font-bold mb-2">
+                                Wide Format Support
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Convert between all major video, audio, and
+                                image formats with ease.
+                            </p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-3xl shadow-sm border border-gray-200 dark:bg-gray-800 dark:border-gray-700"
+                        >
+                            <span class="text-4xl mb-4 block">✨</span>
+                            <h3 class="text-xl font-bold mb-2">
+                                High Quality Output
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Maintain the original quality of your media
+                                while converting to a new format.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- App Screenshots Section -->
+                <section
+                    class="py-12 border-t border-gray-200 dark:border-gray-700"
+                >
+                    <h2
+                        class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8"
+                    >
+                        A Glimpse Inside
+                    </h2>
+                    <div
+                        class="flex flex-col sm:flex-row justify-center space-y-8 sm:space-y-0 sm:space-x-8"
+                    >
+                        <div class="flex flex-col items-center">
+                            <img
+                                src="assets/screenshot1.png"
+                                alt="Conversion Manager screen showing conversion history"
+                                class="w-48 h-80 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700"
+                            />
+                            <p
+                                class="mt-4 text-center text-gray-600 dark:text-gray-400"
+                            >
+                                Manage Your Conversions
+                            </p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img
+                                src="assets/screenshot2.png"
+                                alt="Conversion Creation screen showing output format selection"
+                                class="w-48 h-80 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700"
+                            />
+                            <p
+                                class="mt-4 text-center text-gray-600 dark:text-gray-400"
+                            >
+                                Start a New Conversion
+                            </p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <img
+                                src="assets/screenshot3.png"
+                                alt="Settings screen with app configuration options"
+                                class="w-48 h-80 rounded-3xl shadow-lg border border-gray-200 dark:border-gray-700"
+                            />
+                            <p
+                                class="mt-4 text-center text-gray-600 dark:text-gray-400"
+                            >
+                                Configure Your App
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Privacy Policy & Footer -->
+                <footer
+                    class="mt-12 py-8 text-center border-t border-gray-200 dark:border-gray-700"
+                >
+                    <a
+                        href="privacy-policy.html"
+                        class="text-blue-600 dark:text-blue-400 hover:underline font-bold"
+                    >
+                        View Privacy Policy
+                    </a>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">
+                        &copy; 2025 Media Converter Pro: Ultimate. All Rights
+                        Reserved.
+                    </p>
+                </footer>
+            </div>
+        </div>
+
+        <script>
+            const themeToggleBtn = document.getElementById("theme-toggle");
+            const sunIcon = document.getElementById("sun-icon");
+            const moonIcon = document.getElementById("moon-icon");
+            const html = document.documentElement;
+
+            const prefersDark = window.matchMedia(
+                "(prefers-color-scheme: dark)",
+            ).matches;
+            const storedTheme = localStorage.getItem("theme");
+
+            // Initial theme setup on page load
+            if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+                html.classList.add("dark");
+                sunIcon.classList.add("hidden");
+                moonIcon.classList.remove("hidden");
+            } else {
+                html.classList.remove("dark");
+                sunIcon.classList.remove("hidden");
+                moonIcon.classList.add("hidden");
+            }
+
+            // Handle the theme toggle click
+            themeToggleBtn.addEventListener("click", () => {
+                if (html.classList.contains("dark")) {
+                    html.classList.remove("dark");
+                    localStorage.setItem("theme", "light");
+                    sunIcon.classList.remove("hidden");
+                    moonIcon.classList.add("hidden");
+                } else {
+                    html.classList.add("dark");
+                    localStorage.setItem("theme", "dark");
+                    sunIcon.classList.add("hidden");
+                    moonIcon.classList.remove("hidden");
+                }
+            });
+        </script>
+    </body>
+</html>
